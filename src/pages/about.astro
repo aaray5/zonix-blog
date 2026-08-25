@@ -1,29 +1,30 @@
 ---
-import BlogPost from '../layouts/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BlogPost
-	title="About Me"
-	description="About Ahmed Farhan"
-	pubDate={new Date('August 08 2026')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Welcome to <strong>Zonix</strong> — my personal digital workspace and engineering journal.
-	</p>
+<BaseLayout title="About Me - Zonix" description="About Ahmed Farhan">
+  <main class="container mx-auto px-4 py-12 max-w-2xl">
+    <h1 class="text-4xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">About Me</h1>
+    
+    <div class="space-y-4 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+      <p>
+        Welcome to <strong>Zonix</strong> — my personal digital workspace and engineering journal.
+      </p>
 
-	<p>
-		I'm <strong>Ahmed Farhan</strong>, a Mechanical Engineering student with a deep passion for software development, systems engineering, and technical problem-solving.
-	</p>
+      <p>
+        I'm <strong>Ahmed Farhan</strong>, a Mechanical Engineering student with a deep passion for software development, systems engineering, and technical problem-solving.
+      </p>
 
-	<p>
-		This blog serves as a platform to document my journey, share insights on custom algorithms, low-level programming concepts, web architecture, and explore modern technology tools.
-	</p>
+      <p>
+        This blog serves as a platform to document my journey, share insights on custom algorithms, low-level programming concepts, web architecture, and explore modern technology tools.
+      </p>
 
-	<h3>Core Focus Areas</h3>
-	<ul>
-		<li><strong>Software & Algorithms:</strong> C++ implementations, data structures, and logic design.</li>
-		<li><strong>Engineering & Design:</strong> Blending mechanical principles with digital solution architectures.</li>
-		<li><strong>Technical Writing:</strong> In-depth articles, tutorials, and practical dev notes.</li>
-	</ul>
-</BlogPost>
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">Core Focus Areas</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Software & Algorithms:</strong> C++ implementations, data structures, and logic design.</li>
+        <li><strong>Engineering & Design:</strong> Blending mechanical principles with digital solution architectures.</li>
+        <li><strong>Technical Writing:</strong> In-depth articles, tutorials, and practical dev notes.</li>
+      </ul>
+    </div>
+  </main>
+</BaseLayout>
